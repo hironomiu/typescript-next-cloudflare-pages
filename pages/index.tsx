@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 const Home = ({ blogs }: any) => {
   return (
     <Layout>
-      <div>
+      <main>
         {blogs.map((blog: any) => (
           <div key={blog.id}>
             <Link href={`/blogs/${blog.id}`}>
@@ -13,15 +13,15 @@ const Home = ({ blogs }: any) => {
                 <img
                   src={blog.eyecatch.url}
                   alt="eycatch"
-                  height="200"
-                  width="300"
+                  height="300"
+                  width="400"
                 />
                 <div>{blog.title}</div>
               </a>
             </Link>
           </div>
         ))}
-      </div>
+      </main>
     </Layout>
   )
 }
