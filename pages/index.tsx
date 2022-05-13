@@ -7,10 +7,10 @@ const Home = ({ blogs }: any) => {
       <main className="flex flex-wrap">
         {blogs.map((blog: any) => (
           <div
-            className='className="flex flex-col m-4 w-full md:w-1/3 flex-grow flex-shrink"'
+            className="flex flex-col w-full md:w-1/3 flex-grow flex-shrink"
             key={blog.id}
           >
-            <div className="flex-1 p-2 border-2 hover:shadow-2xl hover:bg-gray-300 rounded">
+            <div className="flex-1 m-4 p-2 pb-8 border-2 hover:shadow-2xl hover:bg-gray-300 rounded">
               <Link href={`/blogs/${blog.id}`}>
                 <a>
                   <img
@@ -24,6 +24,12 @@ const Home = ({ blogs }: any) => {
             </div>
           </div>
         ))}
+        {/* TODO: === 1のケース、md以下の時は表示しない */}
+        {blogs.length % 3 === 2 ? (
+          <div className="flex flex-col w-full md:w-1/3 flex-grow flex-shrink">
+            <div className="flex-1 m-4 p-2 pb-8 border-2 hover:shadow-2xl hover:bg-gray-300 rounded"></div>
+          </div>
+        ) : null}
       </main>
     </Layout>
   )
