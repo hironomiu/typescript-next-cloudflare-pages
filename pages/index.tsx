@@ -10,7 +10,12 @@ const Home = ({ blogs }: any) => {
           <div key={blog.id}>
             <Link href={`/blogs/${blog.id}`}>
               <a>
-                <Image src={blog.eyecatch.url} height="200" width="300" />
+                <img
+                  src={blog.eyecatch.url}
+                  alt="eycatch"
+                  height="200"
+                  width="300"
+                />
                 <div>{blog.title}</div>
               </a>
             </Link>
