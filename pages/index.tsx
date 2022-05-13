@@ -1,5 +1,6 @@
 import { client } from '../libs/client'
 import Link from 'next/link'
+import Image from 'next/image'
 import Layout from '../components/Layout'
 const Home = ({ blogs }: any) => {
   return (
@@ -8,7 +9,10 @@ const Home = ({ blogs }: any) => {
         {blogs.map((blog: any) => (
           <div key={blog.id}>
             <Link href={`/blogs/${blog.id}`}>
-              <a>{blog.title}</a>
+              <a>
+                <Image src={blog.eyecatch.url} height="200" width="300" />
+                <div>{blog.title}</div>
+              </a>
             </Link>
           </div>
         ))}
