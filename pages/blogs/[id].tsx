@@ -6,16 +6,29 @@ const BlogId = ({ data }: any) => {
   console.log('data:', data)
   return (
     <Layout>
-      <div className="m-2 flex flex-col items-center">
-        <div>
-          <div className="text-3xl font-bold">{data.title}</div>
+      <div className="m-2 flex flex-col">
+        <div className="flex flex-col">
+          <div className="flex items-center">
+            <span className="text-3xl font-bold">{data.title}</span>
+            <span className="text-sm">{`(登校日:${new Date(
+              data.createdAt
+            ).getFullYear()}年${
+              new Date(data.createdAt).getMonth() + 1
+            }月${new Date(data.createdAt).getDate()}日)`}</span>
+            <span className="text-sm">{`(更新日:${new Date(
+              data.updatedAt
+            ).getFullYear()}年${
+              new Date(data.updatedAt).getMonth() + 1
+            }月${new Date(data.updatedAt).getDate()}日)`}</span>
+          </div>
           <div
+            className="mt-2"
             dangerouslySetInnerHTML={{
               __html: `${data.content}`,
             }}
           ></div>
         </div>
-        <div>
+        <div className="flex justify-center">
           <Link href={'/'}>Top</Link>
         </div>
       </div>
