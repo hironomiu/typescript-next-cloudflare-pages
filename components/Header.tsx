@@ -3,7 +3,7 @@ const Header = () => {
   return (
     <div className="flex">
       <Link href="/">
-        <a className="text-2xl font-bold">Super Blog!!</a>
+        <a className="text-2xl font-bold ml-2">Super Blog!!</a>
       </Link>
     </div>
   )
