@@ -1,9 +1,10 @@
-import React from 'react'
-
+import Link from 'next/link'
 const Header = () => {
   return (
     <div className="flex">
-      <span className="text-2xl font-bold">Super Blog!!</span>
+      <Link href="/">
+        <a className="text-2xl font-bold">Super Blog!!</a>
+      </Link>
     </div>
   )
 }

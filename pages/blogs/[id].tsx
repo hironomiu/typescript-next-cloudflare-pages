@@ -6,13 +6,15 @@ const BlogId = ({ data }: any) => {
   console.log('data:', data)
   return (
     <Layout>
-      <div>
-        <div>{data.title}</div>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `${data.content}`,
-          }}
-        ></div>
+      <div className="m-2 flex flex-col items-center">
+        <div>
+          <div className="text-3xl font-bold">{data.title}</div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `${data.content}`,
+            }}
+          ></div>
+        </div>
         <div>
           <Link href={'/'}>Top</Link>
         </div>

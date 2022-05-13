@@ -1,8 +1,11 @@
-import React from 'react'
+import { ReactNode } from 'react'
 import Header from './Header'
 
-// TODO: 型
-const Layout = ({ children }: any) => {
+interface Props {
+  children: ReactNode
+}
+
+const Layout = ({ children }: Props) => {
   return (
     <div className="flex flex-col w-screen m-2">
       <Header />
