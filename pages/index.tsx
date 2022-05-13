@@ -2,9 +2,6 @@ import { client } from '../libs/client'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 const Home = ({ blogs }: any) => {
-  // return (
-
-  // )
   return (
     <Layout>
       <div>
