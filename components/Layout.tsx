@@ -1,7 +1,8 @@
 import React from 'react'
 
-const Layout = () => {
-  return <div>Layout</div>
+// TODO: 型
+const Layout = ({ children }: any) => {
+  return <div>{children}</div>
 }
 
 export default Layout

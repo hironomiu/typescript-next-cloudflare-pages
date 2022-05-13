@@ -11,4 +11,6 @@ yarn add microcms-js-sdk
 
 ### Tailwind
 
+`yarn`で実行すること
+
 [公式：nextjs](https://tailwindcss.com/docs/guides/nextjs)
