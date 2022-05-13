@@ -19,7 +19,7 @@ const Home = ({ blogs }: any) => {
                   height="300"
                   width="400"
                 />
-                <div>{blog.title}</div>
+                <span className="text-xl">{blog.title}</span>
               </a>
             </Link>
           </div>
