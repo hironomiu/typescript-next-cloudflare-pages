@@ -14,7 +14,11 @@ const Home = ({ blogs }: any) => {
             <div className="flex-1 p-2 border-2 hover:shadow-2xl hover:bg-gray-300 rounded">
               <Link href={`/blogs/${blog.id}`}>
                 <a>
-                  <img src={blog.eyecatch.url} alt="eycatch" />
+                  <img
+                    src={blog.eyecatch.url}
+                    alt="eycatch"
+                    className="w-full h-full"
+                  />
                   <span className="text-xl">{blog.title}</span>
                 </a>
               </Link>
