@@ -1,21 +1,23 @@
 import { client } from '../../libs/client'
 import Link from 'next/link'
-import React from 'react'
+import Layout from '../../components/Layout'
 
 const BlogId = ({ data }: any) => {
   console.log('data:', data)
   return (
-    <div>
-      <div>{data.title}</div>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `${data.content}`,
-        }}
-      ></div>
+    <Layout>
       <div>
-        <Link href={'/'}>Top</Link>
+        <div>{data.title}</div>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `${data.content}`,
+          }}
+        ></div>
+        <div>
+          <Link href={'/'}>Top</Link>
+        </div>
       </div>
-    </div>
+    </Layout>
   )
 }
 

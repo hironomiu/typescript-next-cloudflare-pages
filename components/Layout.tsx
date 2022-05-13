@@ -4,7 +4,7 @@ import Header from './Header'
 // TODO: 型
 const Layout = ({ children }: any) => {
   return (
-    <div>
+    <div className="flex flex-col w-screen m-2">
       <Header />
       {children}
     </div>
