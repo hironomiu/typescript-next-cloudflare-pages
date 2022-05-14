@@ -29,6 +29,15 @@ const Home = ({ blogs }: any) => {
           <div className="flex flex-col w-full md:w-1/3 flex-grow flex-shrink">
             <div className="flex-1 m-4 p-2 pb-8"></div>
           </div>
+        ) : blogs.length % 3 === 1 ? (
+          <>
+            <div className="flex flex-col w-full md:w-1/3 flex-grow flex-shrink">
+              <div className="flex-1 m-4 p-2 pb-8"></div>
+            </div>
+            <div className="flex flex-col w-full md:w-1/3 flex-grow flex-shrink">
+              <div className="flex-1 m-4 p-2 pb-8"></div>
+            </div>
+          </>
         ) : null}
       </main>
     </Layout>
