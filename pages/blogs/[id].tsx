@@ -10,7 +10,7 @@ const BlogId = ({ data }: any) => {
         <div className="flex flex-col">
           <div className="flex items-center">
             <span className="text-3xl font-bold">{data.title}</span>
-            <span className="text-sm">{`(登校日:${new Date(
+            <span className="text-sm">{`(投稿日:${new Date(
               data.createdAt
             ).getFullYear()}年${
               new Date(data.createdAt).getMonth() + 1
