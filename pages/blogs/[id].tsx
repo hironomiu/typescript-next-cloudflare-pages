@@ -22,7 +22,7 @@ const BlogId = ({ data }: any) => {
             }月${new Date(data.updatedAt).getDate()}日)`}</span>
           </div>
           <div
-            className="mt-2"
+            className="mt-2 blog"
             dangerouslySetInnerHTML={{
               __html: `${data.content}`,
             }}
