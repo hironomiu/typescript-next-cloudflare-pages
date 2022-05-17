@@ -28,7 +28,7 @@ const BlogId = ({ data }: any) => {
             }}
           ></div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center my-4 text-xl ">
           <Link href={'/'}>Top</Link>
         </div>
       </div>
