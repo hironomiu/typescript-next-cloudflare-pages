@@ -16,6 +16,7 @@ const Home = ({ blogs }: any) => {
                   <img
                     src={blog.eyecatch.url}
                     alt="eycatch"
+                    // TODO: 画像のアスペクト比を固定する
                     className="w-full h-full"
                   />
                   <span className="text-xl">{blog.title}</span>
