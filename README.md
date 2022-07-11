@@ -2,6 +2,12 @@
 
 Cloudflare Pages + microCMS
 
+## Run
+
+```
+yarn run dev
+```
+
 ## Install Memo
 
 ```
